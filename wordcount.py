@@ -4,7 +4,7 @@ def countwords(filename):
 
     wordcount={}
     for line in openedfile:
-        finalline=line.rstrip().split(" ")
+        finalline=line.rstrip().lower().split(" ")
         for word in finalline:
             if "," in word:
                 word=word.replace(",", "")
